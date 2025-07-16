@@ -7,14 +7,8 @@ public class Spinner : MonoBehaviour
     [SerializeField] float yAngle = 0f;
     [SerializeField] float zAngle = 0f;
 
-
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
-        transform.Rotate(xAngle, yAngle, zAngle);
+        transform.Rotate(xAngle * Time.deltaTime, yAngle * Time.deltaTime, zAngle * Time.deltaTime);
     }
 }

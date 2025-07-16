@@ -4,13 +4,15 @@ public class FlyAtPlayer : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] Transform player;
+    [SerializeField] float destroyThreshold = 0.01f;
     Vector3 playerPosition;
 
     void Awake()
     {  
         gameObject.SetActive(false);
     }
-    void Start()
+
+    void OnEnable()
     {
         playerPosition = player.position;
     }
@@ -28,7 +30,7 @@ public class FlyAtPlayer : MonoBehaviour
 
     void DestroyWhenReached()
     {
-        if (transform.position == playerPosition)
+        if (Vector3.Distance(transform.position, playerPosition) < destroyThreshold)
         {
             Destroy(gameObject);
         }

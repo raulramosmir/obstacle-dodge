@@ -6,6 +6,7 @@ public class Dropper : MonoBehaviour
 
     MeshRenderer myMeshRenderer;
     Rigidbody myRigidBody;
+    bool hasDropped = false;
 
     void Start()
     {
@@ -18,10 +19,11 @@ public class Dropper : MonoBehaviour
 
     void Update()
     {
-        if (Time.time > timeToWait)
+        if (!hasDropped && Time.time > timeToWait)
         {
             myMeshRenderer.enabled = true;
             myRigidBody.useGravity = true;
+            hasDropped = true;
         }
     }
 }
