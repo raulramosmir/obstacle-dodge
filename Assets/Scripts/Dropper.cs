@@ -7,6 +7,7 @@ public class Dropper : MonoBehaviour
     MeshRenderer myMeshRenderer;
     Rigidbody myRigidBody;
     bool hasDropped = false;
+    float startTime;
 
     void Start()
     {
@@ -15,11 +16,13 @@ public class Dropper : MonoBehaviour
 
         myMeshRenderer.enabled = false;
         myRigidBody.useGravity = false;
+
+        startTime = Time.time;
     }
 
     void Update()
     {
-        if (!hasDropped && Time.time > timeToWait)
+        if (!hasDropped && Time.time - startTime > timeToWait)
         {
             myMeshRenderer.enabled = true;
             myRigidBody.useGravity = true;
