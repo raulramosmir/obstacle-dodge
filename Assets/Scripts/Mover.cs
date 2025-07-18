@@ -28,4 +28,10 @@ public class Mover : MonoBehaviour
         float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         transform.Translate(xValue, yValue, zValue);
     }
+
+    // When disabled, the player won't respond to input
+    public void DisableMovement()
+    {
+        enabled = false;
+    }
 }

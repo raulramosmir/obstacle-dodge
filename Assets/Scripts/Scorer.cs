@@ -52,6 +52,11 @@ public class Scorer : MonoBehaviour
                 {
                     restartButton.gameObject.SetActive(true);
                 }
+                // Prevent further player movement when the game is over
+                if (TryGetComponent(out Mover mover))
+                {
+                    mover.DisableMovement();
+                }
             }
             else
             {
