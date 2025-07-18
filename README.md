@@ -6,8 +6,8 @@ This repository contains the code and assets for the game "**Obstacle Dodge**," 
 
 This project started as part of the course **GameDev.tv: Complete Unity 3D Developer: Design & Develop Games in Unity 6 using C#**. Building upon the foundational concepts taught in the course, I have **personalized and significantly expanded** the project, focusing on:
 
-* **Custom Level Design:** I've crafted a unique and intricate course featuring curves, narrow passages, and gentle ramps, specifically designed to challenge players with car-like movement mechanics.
-* **2.5D Movement:** Control of a character (acting as a vehicle) that navigates a 3D environment, but with movement restricted to a 2D plane (forward/backward and sideways), optimized for track navigation.
+* **Custom Level Design:** I've crafted a unique and intricate course featuring curves, narrow passages, specifically designed to challenge players.
+* **2.5D Movement:** Control of a character that navigates a 3D environment, but with movement restricted to a 2D plane (forward/backward and sideways), optimized for track navigation.
 * **Varied Dynamic Obstacles:** Strategic implementation and placement of projectiles, rotating objects, and falling objects to create reaction and timing challenges.
 * **Core Mechanics:** Includes robust collision detection and a straightforward "Game Over" state management system.
 * **Visual and Audio Enhancements:** TBD - Planned future improvements.
