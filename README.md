@@ -3,6 +3,7 @@
 ---
 
 This repository contains the code and assets for the game "**Obstacle Dodge**," a **2.5D runner** developed with **Unity**.
+It uses Unity's **Universal Render Pipeline (URP)**.
 
 This project started as part of the course **GameDev.tv: Complete Unity 3D Developer: Design & Develop Games in Unity 6 using C#**. Building upon the foundational concepts taught in the course, I have **personalized and significantly expanded** the project, focusing on:
 
@@ -10,6 +11,8 @@ This project started as part of the course **GameDev.tv: Complete Unity 3D Devel
 * **2.5D Movement:** Control of a character that navigates a 3D environment, but with movement restricted to a 2D plane (forward/backward and sideways), optimized for track navigation.
 * **Varied Dynamic Obstacles:** Strategic implementation and placement of projectiles, rotating objects, and falling objects to create reaction and timing challenges.
 * **Core Mechanics:** Includes robust collision detection and a straightforward "Game Over" state management system.
+* **Lives and Restart System:** A HUD displays remaining lives. Losing them all shows a **Game Over** screen with a restart button.
+* **Win Screen:** Reaching the finish line triggers a victory screen.
 * **Visual and Audio Enhancements:** TBD - Planned future improvements.
 
 ---
@@ -25,7 +28,7 @@ This project started as part of the course **GameDev.tv: Complete Unity 3D Devel
 
 ### How to Play
 
-Use the arrow keys or WASD to move your character forward, backward, left, right, or diagonally. Navigate the track and dodge all obstacles to achieve the highest score.
+Use the arrow keys or WASD to move your character forward, backward, left or right. Navigate the track while dodging obstacles and reach the finish without losing all your lives.
 
 ---
 
