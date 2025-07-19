@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,11 +12,6 @@ public class Scorer : MonoBehaviour
     void Start()
     {
         UpdateLivesText();
-
-        if (lifeCounterText != null)
-        {
-            UpdateLivesText();
-        }
 
         if (gameOverText != null)
         {

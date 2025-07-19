@@ -8,13 +8,16 @@ public class FlyAtPlayer : MonoBehaviour
     Vector3 playerPosition;
 
     void Awake()
-    {  
+    {
         gameObject.SetActive(false);
     }
 
     void OnEnable()
     {
-        playerPosition = player.position;
+        if (player != null)
+        {
+            playerPosition = player.position;
+        }
     }
 
     void Update()
@@ -34,6 +37,5 @@ public class FlyAtPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 }
