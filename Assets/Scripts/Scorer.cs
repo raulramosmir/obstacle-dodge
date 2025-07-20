@@ -7,7 +7,7 @@ public class Scorer : MonoBehaviour
     [SerializeField] Text lifeCounterText;
     [SerializeField] Text gameOverText;
     [SerializeField] Button restartButton;
-    [SerializeField] int lives = 10;
+    [SerializeField] int lives = 2;
 
     void Start()
     {

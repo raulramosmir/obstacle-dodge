@@ -5634,6 +5634,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 189537996930909276, guid: 3cb270c98e637ed438a7e7faf7d66e92, type: 3}
+      propertyPath: lives
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 189537996930909276, guid: 3cb270c98e637ed438a7e7faf7d66e92, type: 3}
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 33584016}
